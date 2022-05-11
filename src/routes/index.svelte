@@ -6,7 +6,7 @@
   let decrement;
 
   if(browser) {
-    const socket = new WebSocket("ws://ktor-todo-backend-stream.herokuapp.com/")
+    const socket = new WebSocket("wss://ktor-todo-backend-stream.herokuapp.com/")
 
     socket.onopen = function (_) {
       console.log("connected to server")
